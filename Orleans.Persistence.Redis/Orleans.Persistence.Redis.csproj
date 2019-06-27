@@ -19,7 +19,9 @@
     <RepositoryType>git</RepositoryType>
     <IncludeSymbols>true</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
-    <VersionPrefix>2.0.0-rc2</VersionPrefix>
+    <VersionPrefix>2.3.5</VersionPrefix>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Version>2.3.5</Version>
   </PropertyGroup>
 
   <ItemGroup>
