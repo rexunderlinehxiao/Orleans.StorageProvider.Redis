@@ -11,22 +11,22 @@
     <Authors>OrleansContrib</Authors>
     <Product>Orleans Redis</Product>
     <PackageLicenseUrl>https://github.com/dotnet/Orleans#license</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/OrleansContrib/Orleans.StorageProvider.Redis</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/rexunderlinehxiao/Orleans.StorageProvider.Redis</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/dotnet/orleans/gh-pages/assets/logo_128.png</PackageIconUrl>
     <PackageTags>Orleans Cloud-Computing Actor-Model Actors Distributed-Systems Redis C# .NET</PackageTags>
     <PackageReleaseNotes></PackageReleaseNotes>
-    <RepositoryUrl>https://github.com/OrleansContrib/Orleans.StorageProvider.Redis</RepositoryUrl>
+    <RepositoryUrl>https://github.com/rexunderlinehxiao/Orleans.StorageProvider.Redis</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <IncludeSymbols>true</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
-    <VersionPrefix>2.3.5</VersionPrefix>
+    <VersionPrefix>2.3.6</VersionPrefix>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Version>2.3.5</Version>
+    <Version>2.3.6</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Orleans.OrleansRuntime" Version="2.3.5" />
-    <PackageReference Include="StackExchange.Redis" Version="1.2.6" />
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
+    <PackageReference Include="Microsoft.Orleans.OrleansRuntime" Version="2.3.6" />
+    <PackageReference Include="StackExchange.Redis" Version="2.0.601" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 </Project>
