@@ -21,7 +21,7 @@
     <IncludeSource>true</IncludeSource>
     <VersionPrefix>3.0.0-rc2</VersionPrefix>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Version>3.0.0-rc2</Version>
+    <Version>3.0.0-rc2-1</Version>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <FileVersion>3.0.0.0</FileVersion>
   </PropertyGroup>
