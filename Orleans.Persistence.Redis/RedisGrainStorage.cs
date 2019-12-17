@@ -213,7 +213,8 @@ namespace Orleans.Persistence
         private string GetKey(GrainReference grainReference)
         {
             var format = _options.UseJson ? "json" : "binary";
-            return $"{grainReference.ToKeyString()}|{format}";
+            var prefix = string.IsNullOrWhiteSpace(_options.Prefix) ? "Orleans" : _options.Prefix;
+            return $"{prefix}:{grainReference.ToKeyString()}|{format}";
         }
 
         public Task Close(CancellationToken cancellationToken)

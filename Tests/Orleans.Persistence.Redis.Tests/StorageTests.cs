@@ -142,7 +142,7 @@ namespace Orleans.Persistence.Redis.Tests
 
             var grain = _cluster.GrainFactory.GetGrain<IJsonTestGrain>(12345999);
             var grainRef = await grain.GetReference();
-            var key = $"{grainRef.ToKeyString()}|json";
+            var key = $"Orleans:{grainRef.ToKeyString()}|json";
             await _fixture.Database.StringSetAsync(key, testState);
             
             var result = await grain.Get();
@@ -164,7 +164,7 @@ namespace Orleans.Persistence.Redis.Tests
             var stuff = await grain.Get();
             var scheduler = TaskScheduler.Current;
 
-            var key = $"{grainRef.ToKeyString()}|json";
+            var key = $"Orleans:{grainRef.ToKeyString()}|json";
             await _fixture.Database.HashSetAsync(key, new[] { new HashEntry("etag", "derp") });
 
             var otherGrain = _cluster.GrainFactory.GetGrain<IJsonTestGrain>(2222);

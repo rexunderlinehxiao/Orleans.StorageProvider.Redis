@@ -4,6 +4,8 @@
     {
         public string DataConnectionString { get; set; } = "localhost:6379";
 
+        public string Prefix { get; set; } = "Orleans";
+
         public bool UseJson { get; set; }
 
         public bool DeleteOnClear { get; set; }
